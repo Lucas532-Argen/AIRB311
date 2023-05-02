@@ -11,9 +11,7 @@ html {
   scroll-behavior: smooth;
 }
 
-.contenedor{
-
-}
+.contenedor {}
 
 body {
   margin: 0;
@@ -97,7 +95,8 @@ nav .list li a {
   color: #f4eeeb;
 }
 
-li a.active,li a:hover {
+li a.active,
+li a:hover {
   background: #29298e;
   transition: .5s;
 }
@@ -116,54 +115,56 @@ li a.active,li a:hover {
   display: none;
 }
 
-@media (max-width: 952px){
-  .logo{
-      padding-left: 20px;
+@media (max-width: 952px) {
+  .logo {
+    padding-left: 20px;
   }
+
   nav .list li a {
-      font-size: 16px;
+    font-size: 16px;
   }
 }
 
 
-@media (max-width: 800px){
-  .checkbtn{
-      display: block;
-      
-      
+@media (max-width: 800px) {
+  .checkbtn {
+    display: block;
+
+
   }
 
-  nav ul{
-      position: fixed;
-      width: 100%;
-      height: 100vh;
-      background: #2c2083;
-      top: 80px;
-      left: -100%;
-      text-align: center;
-      transition: all .5s;
+  nav ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2c2083;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
   }
 
-  nav ul li{
-      display: block;
-      margin: 50px 0;
-      line-height: 30px;
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
   }
 
-  nav ul li a{
-      font-size: 20px;
-      
+  nav ul li a {
+    font-size: 20px;
+
   }
 
-  li a:hover, li a.active{
-      background: none;
-      color: red;
+  li a:hover,
+  li a.active {
+    background: none;
+    color: red;
   }
-  
-  #check:checked ~ ul{
-      left:0;
-      display: inline-grid;
-      align-content: center
+
+  #check:checked~ul {
+    left: 0;
+    display: inline-grid;
+    align-content: center
   }
 }
 
@@ -182,14 +183,14 @@ li a.active,li a:hover {
   background-size: cover;
   height: 600px;
   width: 100%;
-  
+
 
 }
 
 
 
 
-.noticias-informacion .casa-manos{
+.noticias-informacion .casa-manos {
   background: no-repeat;
   display: flex;
   justify-content: center;
@@ -197,8 +198,8 @@ li a.active,li a:hover {
   background: no-repeat;
   margin: 0 px;
   padding: 5px;
-    
-  
+
+
 
 }
 
@@ -241,7 +242,7 @@ h2 {
   text-align: center;
   background-color: #e5e5f7;
   border-radius: 50%;
-  
+
 }
 
 .main-contacto form {
@@ -256,6 +257,119 @@ h2 {
 
 }
 
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 16px;
+  background: #fff;
+  font-family: "Roboto";
+}
+
+a {
+  color: #FF4136;
+}
+
+.wrap {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.info {
+  text-align: center;
+  padding: 20px;
+  color: #001F3F;
+  border-bottom: 1px solid #ccc;
+}
+
+.info p {
+  margin-top: 20px;
+}
+
+.formulario h2 {
+  font-size: 16px;
+  color: #001F3F;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+
+.formulario>div {
+  padding: 20px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.formulario .radio label,
+.formulario .checkbox label {
+  display: inline-block;
+  cursor: pointer;
+  color: #FF4136;
+  position: relative;
+  padding: 5px 15px 5px 51px;
+  font-size: 1em;
+  border-radius: 5px;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.formulario .radio label:hover,
+.formulario .checkbox label:hover {
+  background: rgba(255, 65, 54, 0.1);
+}
+
+.formulario .radio label:before,
+.formulario .checkbox label:before {
+  content: "";
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  position: absolute;
+  left: 15px;
+  border-radius: 50%;
+  background: none;
+  border: 3px solid #FF4136;
+}
+
+.formulario input[type="radio"] {
+  display: none;
+}
+
+.formulario input[type="radio"]:checked+label:before {
+  display: none;
+}
+
+.formulario input[type="radio"]:checked+label {
+  padding: 5px 15px;
+  background: #FF4136;
+  border-radius: 2px;
+  color: #fff;
+}
+
+.formulario .checkbox label:before {
+  border-radius: 3px;
+}
+
+.formulario .checkbox input[type="checkbox"] {
+  display: none;
+}
+
+.formulario .checkbox input[type="checkbox"]:checked+label:before {
+  display: none;
+}
+
+.formulario .checkbox input[type="checkbox"]:checked+label {
+  background: #FF4136;
+  color: #fff;
+  padding: 5px 15px;
+}
+
+
 .parrafo-conocenos {
   text-align: center;
   text-decoration: solid;
@@ -263,7 +377,7 @@ h2 {
   color: #e5e5f7;
   background-color: #222;
 
-  
+
 
 }
 
@@ -395,7 +509,7 @@ section {
   background-position: top center;
 }
 
-.main-vender{
+.main-vender {
   background-image: url(../Recursos/1535741541_243273_1535744034_noticia_normal_recorte1.jpg);
   background-repeat: no-repeat;
   background-position: center center;
@@ -403,17 +517,15 @@ section {
   background-attachment: fixed;
 }
 
-.main-vender p{
+.main-vender p {
   text-align: center;
   font-size: 20px;
   font-weight: bold;
   color: #f4f2f2;
   background-color: #222
-  
-  
 }
 
-.main-conocenos{
+.main-conocenos {
   background-image: url(../Recursos/fotogaleria-argentina-pobreza-vista-aerea-de-la-villa-31-962695.jpg);
   background-repeat: no-repeat;
   background-position: right right;
@@ -421,24 +533,24 @@ section {
   background-attachment: fixed;
 }
 
-.vi{
+.vi {
   font-size: 20px;
   background-color: #222;
   color: white;
 }
 
-.vi ul{
+.vi ul {
   background-color: #222;
   color: white;
 }
 
-.list-conocenos{
+.list-conocenos {
   background-color: #222;
   color: white;
 }
 
 
-.main-compra{
+.main-compra {
   background-image: url(../Recursos/vivienda-nueva.jpeg);
   background-repeat: no-repeat;
   background-position: center center;
@@ -446,7 +558,7 @@ section {
   background-attachment: fixed;
 }
 
-.div-subir{
+.div-subir {
   position: relative;
   padding: 10px;
   margin: 150px;
@@ -458,7 +570,7 @@ section {
 
 }
 
-input.bt-enviar{
+input.bt-enviar {
   position: absolute;
   top: 0px;
   left: 0px;

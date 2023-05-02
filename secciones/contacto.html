@@ -11,6 +11,7 @@
     <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
@@ -47,7 +48,8 @@
         <main class="main-contacto">
             <h2>CONTACTO</h2>
 
-            <form action="#" method="get">
+            <form action="#" method="get" class="formulario">
+                
                 <input type="text" placeholder="Nombre" name="Nombre" required>
 
                 <input type="number" placeholder="Edad" name="Edad">
@@ -59,12 +61,27 @@
                     <option value="Brasil">Brasil</option>
                     <option value="Uruguay">Uruguay</option>
                 </select>
-                <p>Te gustaria recibir informacion de AIR B31?</p>
-                <span>SI</span>
-                <input type="radio" name="Informacion" value="SI">
-
-                <span>NO</span>
-                <input type="radio" name="Informacion" value="NO">
+                
+                <div class="radio">
+                    <h2>SEXO</h2>
+                    <input type="radio" name="sexo" id="hombre">
+                    <label for="hombre">Hombre</label>
+            
+                    <input type="radio" name="sexo" id="mujer">
+                    <label for="mujer">Mujer</label>
+            
+                    <input type="radio" name="sexo" id="no-binario">
+                    <label for="no-binario">No-Binario</label>
+                </div>
+            
+                <div class="checkbox">
+                    <h2>Te gustaria recibir informacion de AIR B31?</h2>
+                    <input type="checkbox" name="checkbox" id="checkbox1">
+                    <label for="checkbox1">SI</label>
+            
+                    <input type="checkbox" name="checkbox" id="checkbox2">
+                    <label for="checkbox2">NO</label>
+                </div>
 
                 <input type="submit">
             </form>
