@@ -74,8 +74,6 @@ nav {
 nav .list {
   float: right;
   margin-right: 20px;
-  
-
 
 }
 
@@ -153,6 +151,7 @@ li a.active,li a:hover {
 
   nav ul li a{
       font-size: 20px;
+      
   }
 
   li a:hover, li a.active{
@@ -284,6 +283,7 @@ h2 {
   justify-content: space-between;
   align-items: center;
   text-decoration: none;
+  margin-bottom: 0;
 
 
 }
