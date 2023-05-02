@@ -130,6 +130,7 @@ li a.active,li a:hover {
   .checkbtn{
       display: block;
       
+      
   }
 
   nav ul{
@@ -161,6 +162,8 @@ li a.active,li a:hover {
   
   #check:checked ~ ul{
       left:0;
+      display: inline-grid;
+      align-content: center
   }
 }
 
