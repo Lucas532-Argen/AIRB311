@@ -17,7 +17,7 @@ html {
 
 body {
   margin: 0;
-  background-color: rgb(164, 126, 88);
+  background-color: rgb(244, 245, 248);
   font-family: Arial, Helvetica, sans-serif;
   color: rgb(0, 4, 4);
   display: flex;
@@ -96,7 +96,7 @@ nav .list li a {
   border-radius: 3px;
   text-transform: uppercase;
   text-decoration: none;
-  color: #9d8080;
+  color: #f4eeeb;
 }
 
 li a.active,li a:hover {
@@ -214,12 +214,13 @@ li a.active,li a:hover {
 .parrafo {
   text-align: center;
   text-overflow: clip;
-
+  font-size: 20px;
 }
 
 .parrafo1 {
   text-align: center;
   text-transform: lowercase;
+  font-size: 20px;
 }
 
 
@@ -236,7 +237,8 @@ li a.active,li a:hover {
 
 h2 {
   text-align: center;
-  padding: 10%;
+  background-color: #e5e5f7;
+  border-radius: 50%;
   
 }
 
@@ -256,10 +258,10 @@ h2 {
   text-align: center;
   text-decoration: solid;
   font-size: 20px;
-  color: #e5e5f7
-  
+  color: #e5e5f7;
+  background-color: #222;
 
-  ;
+  
 
 }
 
@@ -403,6 +405,7 @@ section {
   font-size: 20px;
   font-weight: bold;
   color: #f4f2f2;
+  background-color: #222
   
   
 }
@@ -410,10 +413,28 @@ section {
 .main-conocenos{
   background-image: url(../Recursos/fotogaleria-argentina-pobreza-vista-aerea-de-la-villa-31-962695.jpg);
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: right right;
   background-size: cover;
   background-attachment: fixed;
 }
+
+.vi{
+  font-size: 20px;
+  background-color: #222;
+  color: white;
+}
+
+.vi ul{
+  background-color: #222;
+  color: white;
+}
+
+.list-conocenos{
+  background-color: #222;
+  color: white;
+}
+
+
 
 .main-compra{
   background-image: url(../Recursos/vivienda-nueva.jpeg);
