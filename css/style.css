@@ -142,6 +142,11 @@ li a:hover {
     left: -100%;
     text-align: center;
     transition: all .5s;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
   }
 
   nav ul li {
@@ -469,7 +474,7 @@ section {
 }
 
 #menu .casa-tile .front {
-  background-image: url(../Recursos/jpeg.2.jpg ) ;
+  background-image: url(../Recursos/jpeg.2.jpg );
   background-size: cover;
   background-position: top center;
 }
