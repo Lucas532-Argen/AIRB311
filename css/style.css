@@ -163,8 +163,6 @@ li a:hover {
 
   #check:checked~ul {
     left: 0;
-    display: inline-grid;
-    align-content: center
   }
 }
 
@@ -471,7 +469,7 @@ section {
 }
 
 #menu .casa-tile .front {
-  background-image: url(../Recursos/jpeg.2.jpg );
+  background-image: url(../Recursos/jpeg.2.jpg ) ;
   background-size: cover;
   background-position: top center;
 }
