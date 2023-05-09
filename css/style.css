@@ -7,30 +7,39 @@
   box-sizing: border-box;
 }
 
-html {
+html,
+body {
+  height: 100%;
   scroll-behavior: smooth;
 }
 
-.contenedor {}
-
-body {
-  margin: 0;
+.contenedor {
   background-color: #222;
   font-family: Arial, Helvetica, sans-serif;
   color: rgb(0, 4, 4);
-  display: flex;
-  flex-direction: column;
+  display: grid;
   min-height: 100vh;
-
-
+  grid-template-rows: auto 1fr auto;
 }
+
+
+/*body {
+
+  background-color: #222;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(0, 4, 4);
+  display: grid;
+  min-height: 100vh;
+  grid-template-rows: auto 1fr auto;
+}*/
+
 
 body::-webkit-scrollbar {
   width: 7px;
 }
 
 body::-webkit-scrollbar-thumb {
-  background: rgb(226, 92, 15);
+  background: #c2500ea0;
 }
 
 .header {
@@ -118,6 +127,8 @@ li a:hover {
 @media (max-width: 952px) {
   .logo {
     padding-left: 20px;
+
+
   }
 
   nav .list li a {
@@ -129,6 +140,7 @@ li a:hover {
 @media (max-width: 800px) {
   .checkbtn {
     display: block;
+
 
 
   }
@@ -166,9 +178,21 @@ li a:hover {
     color: red;
   }
 
+
+
   #check:checked~ul {
     left: 0;
+    z-index: 2;
   }
+
+
+}
+
+
+#carouselExampleAutoplaying {
+  width: 100%;
+  padding: 20px;
+  margin: auto;
 }
 
 
@@ -186,8 +210,6 @@ li a:hover {
   background-size: cover;
   height: 600px;
   width: 100%;
-
-
 }
 
 
@@ -249,7 +271,7 @@ h2 {
 }
 
 .main-contacto form {
-  background-color: azure;
+  background-color: transparent;
   margin: auto;
   width: 90%;
   max-width: 400px;
@@ -268,11 +290,12 @@ h2 {
   padding: 0;
 }
 
-body {
+/*body {
   font-size: 16px;
   background: #fff;
   font-family: "Roboto";
-}
+  
+}*/
 
 a {
   color: #FF4136;
@@ -300,6 +323,7 @@ a {
   color: #001F3F;
   margin-bottom: 20px;
   margin-left: 20px;
+
 }
 
 .formulario>div {
@@ -403,8 +427,7 @@ a {
   justify-content: space-between;
   align-items: center;
   text-decoration: none;
-  margin-bottom: 0;
-
+  margin-top: auto;
 
 }
 
@@ -417,8 +440,8 @@ section {
 #menu {
   background-color: rgb(195, 35, 88);
   display: grid;
-  grid-template-columns: repeat(4, 200px);
-  grid-template-rows: repeat(2, 200px);
+  grid-template-columns: repeat(4, 140px);
+  grid-template-rows: repeat(2, 140px);
   justify-content: center;
   align-content: center;
   grid-template-areas:
@@ -428,6 +451,7 @@ section {
 
 #menu .tile {
   height: 100%;
+  align-content: center;
   overflow: hidden;
   cursor: pointer;
 }
@@ -440,6 +464,7 @@ section {
   color: white;
   background-color: black;
   height: 100%;
+  margin: 0px;
   display: grid;
   justify-items: center;
   align-items: center;
@@ -565,7 +590,7 @@ section {
   position: relative;
   padding: 10px;
   margin: 150px;
-  width: 150px;
+  width: 302px;
   background-color: #444cf7;
   border-radius: 5px;
   box-shadow: 0px 3px 0px blue;
@@ -582,4 +607,11 @@ input.bt-enviar {
   width: 100%;
   height: 100%;
   opacity: 0;
+}
+
+.formulario-compra {}
+
+
+.parrafo-manual {
+  margin-bottom: 0rem;
 }
