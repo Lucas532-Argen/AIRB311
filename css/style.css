@@ -282,9 +282,15 @@
     margin-top: 3em;
     display: grid;
     gap: 2.5em;
-    border-style: solid;
+    border-style: none;}
+    input{
+      border-color: red;
+    }
   
+  select{
+    border-color: red;
   }
+  
   
   * {
     -webkit-box-sizing: border-box;
